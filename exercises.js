@@ -5,6 +5,7 @@
 // Define a function that returns the first element of an array.
 // Example: getFirstElement(['a', 'b', 'c']) returns 'a'
 function getFirstElement(arr) {
+  
 }
 console.log('Exercise 1 Result:', getFirstElement(['a', 'b', 'c']));
 

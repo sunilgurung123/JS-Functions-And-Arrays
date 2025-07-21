@@ -5,7 +5,7 @@
 // Define a function that returns the first element of an array.
 // Example: getFirstElement(['a', 'b', 'c']) returns 'a'
 function getFirstElement(arr) {
-  
+  return arr[0];
 }
 console.log('Exercise 1 Result:', getFirstElement(['a', 'b', 'c']));
 
@@ -13,6 +13,7 @@ console.log('Exercise 1 Result:', getFirstElement(['a', 'b', 'c']));
 // Define a function that returns the length of an array.
 // Example: getArrayLength([1, 2, 3, 4]) returns 4
 function getArrayLength(arr) {
+  return arr.length
 }
 console.log('Exercise 2 Result:', getArrayLength([1, 2, 3, 4]));
 
@@ -20,6 +21,8 @@ console.log('Exercise 2 Result:', getArrayLength([1, 2, 3, 4]));
 // Define a function that adds a number to the end of an array and returns the array.
 // Example: addToEnd([1, 2], 3) returns [1, 2, 3]
 function addToEnd(arr, num) {
+   arr.push(num);
+  return arr;
 }
 console.log('Exercise 3 Result:', addToEnd([1, 2], 3));
 
@@ -27,13 +30,16 @@ console.log('Exercise 3 Result:', addToEnd([1, 2], 3));
 // Define a function that returns true if an array is empty, false otherwise.
 // Example: isArrayEmpty([]) returns true
 function isArrayEmpty(arr) {
+  return arr.length === 0;
 }
+
 console.log('Exercise 4 Result:', isArrayEmpty([]));
 
 // Exercise 5: greetFirst()
 // Define a function that takes an array of names and returns a greeting for the first name.
 // Example: greetFirst(['Alice', 'Bob']) returns 'Hello, Alice!'
 function greetFirst(names) {
+  return 'Hello, ' + names[0] + '!';
 }
 console.log('Exercise 5 Result:', greetFirst(['Alice', 'Bob']));
 
@@ -41,6 +47,7 @@ console.log('Exercise 5 Result:', greetFirst(['Alice', 'Bob']));
 // Define a function that returns the sum of the first two elements of a number array.
 // Example: sumFirstTwo([5, 10, 15]) returns 15
 function sumFirstTwo(numbers) {
+  return numbers[0] + numbers[1];
 }
 console.log('Exercise 6 Result:', sumFirstTwo([5, 10, 15]));
 
@@ -48,6 +55,7 @@ console.log('Exercise 6 Result:', sumFirstTwo([5, 10, 15]));
 // Define a function that checks if an array contains a specific value using includes().
 // Example: containsValue(['cat', 'dog'], 'dog') returns true
 function containsValue(arr, value) {
+  return arr.includes(value);
 }
 console.log('Exercise 7 Result:', containsValue(['cat', 'dog'], 'dog'));
 
@@ -55,6 +63,7 @@ console.log('Exercise 7 Result:', containsValue(['cat', 'dog'], 'dog'));
 // Define a function that joins an array of names with ', ' and returns the string.
 // Example: joinNames(['Sam', 'Alex']) returns 'Sam, Alex'
 function joinNames(names) {
+  return name.join(',')
 }
 console.log('Exercise 8 Result:', joinNames(['Sam', 'Alex']));
 

@@ -47,9 +47,9 @@ console.log('Exercise 5 Result:', greetFirst(['Alice', 'Bob']));
 // Define a function that returns the sum of the first two elements of a number array.
 // Example: sumFirstTwo([5, 10, 15]) returns 15
 function sumFirstTwo(numbers) {
-  return numbers[0] + numbers[1];
+  return numbers[0] + numbers.length - 1;
 }
-console.log('Exercise 6 Result:', sumFirstTwo([5, 10, 15]));
+console.log('Exercise 6 Result:', sumFirstTwo([5, 10, 15])); //15
 
 // Exercise 7: containsValue()
 // Define a function that checks if an array contains a specific value using includes().
@@ -71,6 +71,7 @@ console.log('Exercise 8 Result:', joinNames(['Sam', 'Alex']));
 // Define a function that returns the index of the last element in an array.
 // Example: getLastIndex(['a', 'b', 'c']) returns 2
 function getLastIndex(arr) {
+  return arr.length - 1;
 }
 console.log('Exercise 9 Result:', getLastIndex(['a', 'b', 'c']));
 
@@ -78,6 +79,8 @@ console.log('Exercise 9 Result:', getLastIndex(['a', 'b', 'c']));
 // Define a function that removes the first element of an array and returns the array.
 // Example: removeFirst([1, 2, 3]) returns [2, 3]
 function removeFirst(arr) {
+   arr.shift();
+   return arr;
 }
 console.log('Exercise 10 Result:', removeFirst([1, 2, 3]));
 
@@ -87,6 +90,11 @@ console.log('Exercise 10 Result:', removeFirst([1, 2, 3]));
 // Define a function that doubles each number in an array using forEach() and returns the new array.
 // Example: doubleNumbers([1, 2, 3]) returns [2, 4, 6]
 function doubleNumbers(numbers) {
+  let newArr = [];
+  numbers.forEach(function(num) {
+    newArr.push(num*2);
+  })
+  return newArr;
 }
 console.log('Exercise 11 Result:', doubleNumbers([1, 2, 3]));
 
@@ -94,6 +102,7 @@ console.log('Exercise 11 Result:', doubleNumbers([1, 2, 3]));
 // Define a function that filters words shorter than 4 characters from an array.
 // Example: filterShortWords(['cat', 'tiger', 'dog']) returns ['tiger']
 function filterShortWords(words) {
+
 }
 console.log('Exercise 12 Result:', filterShortWords(['cat', 'tiger', 'dog']));
 
